@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#281d45" />
+    <meta name="description" content="Un septiembre lleno de flores amarillas." />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='54'%3E🌻%3C/text%3E%3C/svg%3E" />
+    <title>Flores amarillas para ti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="aurora aurora-one"></div>
+    <div class="aurora aurora-two"></div>
+    <div class="stars" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">s<span>e</span>ptiembre</a>
+      <button class="sound-toggle" id="soundToggle" type="button" aria-label="Reproducir música">
+        <span class="sound-icon">♫</span><span id="soundLabel">Música</span>
+      </button>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <p class="eyebrow"><span></span> Para la persona que ilumina mis días <span></span></p>
+        <h1>Un septiembre<br /><em>para florecer contigo.</em></h1>
+        <p class="intro">Porque hay detalles que hablan por nosotros. Este jardín siempre tendrá tu nombre.</p>
+        <a class="scroll-cue" href="#recuerdo">abre tu regalo <b>↓</b></a>
+
+        <div class="bouquet-scene" aria-label="Un ramo de flores amarillas">
+          <div class="halo"></div>
+          <div class="flower f1">🌻</div><div class="flower f2">🌼</div><div class="flower f3">🌻</div>
+          <div class="flower f4">🌼</div><div class="flower f5">🌻</div><div class="flower f6">🌼</div>
+          <div class="flower f7">🌻</div>
+          <div class="ribbon">para ti</div>
+        </div>
+      </section>
+
+      <section class="letter section-reveal" id="recuerdo">
+        <div class="letter-mark">✦</div>
+        <p class="eyebrow gold"><span></span> una pequeña carta <span></span></p>
+        <blockquote>“No sé si las flores amarillas cumplen deseos,<br />pero sé que mi deseo favorito es seguir<br />compartiendo la vida contigo.”</blockquote>
+        <p class="signature">Con todo mi amor <span>♥</span></p>
+      </section>
+
+      <section class="memories section-reveal" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <p class="eyebrow gold"><span></span> nuestros instantes <span></span></p>
+          <h2 id="gallery-title">Las cosas bonitas<br /><em>se guardan aquí.</em></h2>
+        </div>
+        <div id="polaroidGallery" class="polaroid-gallery" aria-live="polite"></div>
+        <p class="gallery-hint">Cada foto, una razón para sonreír.</p>
+      </section>
+
+      <section class="music-card section-reveal" aria-labelledby="music-title">
+        <div class="record-wrap"><div class="record"><span>♥</span></div></div>
+        <div class="music-copy">
+          <p class="eyebrow gold"><span></span> nuestra banda sonora</p>
+          <h2 id="music-title">Dale play<br /><em>a nuestro momento.</em></h2>
+          <p id="trackName" class="track-name">Agrega canciones en la carpeta <code>assets/music</code></p>
+        </div>
+        <button id="bigPlay" class="play-button" type="button" aria-label="Reproducir o pausar música">▶</button>
+      </section>
+    </main>
+
+    <footer>Hecho para ti, con un poquito de magia amarilla. <span>🌻</span></footer>
+    <audio id="player" preload="metadata"></audio>
+    <script src="gallery.js"></script>
+    <script src="music.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
