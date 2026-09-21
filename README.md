@@ -4,10 +4,11 @@ Una página estática lista para publicar con GitHub Pages.
 
 ## Personalízala
 
-1. Pon todas tus imágenes en `assets/photos/` y anótalas en `gallery.js`.
-2. Pon tus canciones en `assets/music/` y anótalas en `music.js`.
-3. Edita la frase de la carta directamente en `index.html` si quieres volverla aún más personal.
+1. Pon todas tus imágenes en `assets/photos/`.
+2. Pon tus canciones en `assets/music/`.
+3. Sube los cambios a GitHub: la página detectará todos los archivos sola. No necesitas editar JavaScript.
+4. Edita la frase de la carta directamente en `index.html` si quieres volverla aún más personal.
 
 ## Publicarla con GitHub Pages
 
-Sube estos archivos a un repositorio de GitHub. En **Settings → Pages**, elige publicar desde la rama `main` y la carpeta raíz (`/`). GitHub te mostrará el enlace al terminar.
+Sube estos archivos a un repositorio de GitHub. En **Settings → Pages**, selecciona **GitHub Actions** como origen. GitHub publicará la página y actualizará fotos y música cada vez que subas nuevos archivos.

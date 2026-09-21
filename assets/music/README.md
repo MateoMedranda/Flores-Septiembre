@@ -1,11 +1,5 @@
 # Tu música
 
-Coloca aquí una o varias canciones en formato MP3, OGG o WAV.
+Coloca aquí una o varias canciones. No tienes que editar ningún archivo: al subir la web a GitHub, se detectarán automáticamente y se reproducirán en orden y en bucle.
 
-Luego abre `music.js` y agrega los nombres de los archivos. Ejemplo:
-
-```js
-"assets/music/nuestra-cancion.mp3",
-```
-
-Las canciones se reproducirán en orden y la lista volverá a comenzar automáticamente.
+Para que funcionen en la mayoría de celulares y navegadores, usa MP3, M4A/AAC, OGG, WAV u OPUS. Los formatos que el navegador no soporte se omitirán automáticamente.

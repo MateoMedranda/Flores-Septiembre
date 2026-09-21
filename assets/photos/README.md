@@ -2,8 +2,4 @@
 
 Coloca aquí todas las imágenes que quieras mostrar (por ejemplo, `foto-01.jpg`, `playa.png`).
 
-Después abre `gallery.js` y agrega una línea por imagen. Ejemplo:
-
-```js
-{ src: "assets/photos/foto-01.jpg", caption: "Nuestro primer recuerdo" },
-```
+No tienes que editar ningún archivo: al subir la web a GitHub, todas las fotos de esta carpeta aparecerán automáticamente como polaroids. El nombre del archivo será el texto de la foto.
