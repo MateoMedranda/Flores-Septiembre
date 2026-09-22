@@ -48,18 +48,13 @@ player.addEventListener('error', () => {
 });
 
 renderGallery();
-async function loadFolderAssets() {
-  try {
-    const response = await fetch('assets.json', { cache: 'no-store' });
-    if (!response.ok) throw new Error('assets.json unavailable');
-    const assets = await response.json();
-    photos = Array.isArray(assets.photos) ? assets.photos : [];
-    playlist = Array.isArray(assets.playlist) ? assets.playlist : [];
-    renderGallery();
-    if (playlist.length) loadTrack(0);
-  } catch {
-    trackName.textContent = 'Tus canciones aparecerán al publicar en GitHub Pages.';
+function loadFolderAssets() {
+  if (window.ASSETS) {
+    photos = Array.isArray(window.ASSETS.photos) ? window.ASSETS.photos : [];
+    playlist = Array.isArray(window.ASSETS.playlist) ? window.ASSETS.playlist : [];
   }
+  renderGallery();
+  if (playlist.length) loadTrack(0);
 }
 loadFolderAssets();
 const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
